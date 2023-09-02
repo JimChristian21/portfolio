@@ -4,14 +4,31 @@
         <title>Jim Christian Edullantes Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e806f9fa77.js" crossorigin="anonymous"></script>
     </head>
     <script type="text/javascript" src="./js/tailwind.js"></script>
     <body>
-        <nav class="w-100 h-12 bg-slate-900 flex justify-end text-white items-center text-xl">
-            <a href="#Home" class="mx-2 rounded-lg p-2 hover:bg-slate-700">Home</a>
-            <a href="#Projects" class="mx-2 rounded-lg p-2 hover:bg-slate-700">Projects</a>
-            <a href="#AboutMe" class="mx-2 rounded-lg p-2 hover:bg-slate-700">About Me</a>
-            <a href="#Contacts" class="ml-2 mr-10 rounded-lg p-2 hover:bg-slate-700">Contacts</a>
+        <nav class="w-100 min-h-12 bg-slate-900 flex justify-end text-white items-center text-xl">
+            <div class="hidden md:flex mr-10">
+                <a href="#Home" class="mx-2 rounded-lg p-2 hover:bg-slate-700">Home</a>
+                <a href="#Projects" class="mx-2 rounded-lg p-2 hover:bg-slate-700">Projects</a>
+                <a href="#AboutMe" class="mx-2 rounded-lg p-2 hover:bg-slate-700">About Me</a>
+                <a href="#Contacts" class="mx-2  rounded-lg p-2 hover:bg-slate-700">Contacts</a>
+            </div>
+            <div class="md:hidden w-full flex flex-col">
+                <i 
+                    id="nav-toggle" 
+                    class="fa-solid fa-bars text-3xl hover:cursor-pointer self-end mr-5"
+                >
+                </i>
+                <div id="mobile-nav" class="flex flex-col hidden w-full">
+                    <a href="#Home" class="mx-2 rounded-lg p-2 hover:bg-slate-700 text-center">Home</a>
+                    <a href="#Projects" class="mx-2 rounded-lg p-2 hover:bg-slate-700 text-center">Projects</a>
+                    <a href="#AboutMe" class="mx-2 rounded-lg p-2 hover:bg-slate-700 text-center">About Me</a>
+                    <a href="#Contacts" class="mx-2  rounded-lg p-2 hover:bg-slate-700 text-center">Contacts</a>
+                </div>
+            </div>
         </nav>
     </body>
+    <script type="text/javascript" src="./js/main.js"></script>
 </html>
